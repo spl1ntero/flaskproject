@@ -1,0 +1,24 @@
+{% extends "base.html" %}
+
+{% block content %}
+<h1 class="gradient-text">Ваши параметры:</h1>
+<div class="container2">
+    <p>Пульс: <br> {{registration.pulse}}</p>
+</div>
+
+<div class="container3">
+    <p>Давление: <br> {{registration.pressure}}</p>
+</div>
+
+<div class="container4">
+    <p>Сахар: <br> {{registration.sugar}}</p>
+</div>
+
+<div class="container5">
+    <p>Гемоглобин: <br> {{registration.hemoglobin}}</p>
+</div>
+
+<form action="/feedback" method="get">
+    <button type="submit" class="btnn btn-primary profilebtn">Обратная связь</button>
+</form>
+{% endblock %}
